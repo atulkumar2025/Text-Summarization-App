@@ -68,30 +68,5 @@ python app.py
 
 ---
 
-## **🌍 Deployment on Render**  
-### **🔹 Step 1: Push Code to GitHub**
-```bash
-git add .
-git commit -m "Initial commit"
-git push origin main
-```
-
-### **🔹 Step 2: Deploy on Render**
-1. Sign in to [Render](https://render.com/).
-2. Click **"New Web Service"** → Select **your GitHub repo**.
-3. Set Python runtime:  
-   - Create **`runtime.txt`** and add:
-     ```
-     python-3.11
-     ```
-4. Set build & start commands:
-   ```bash
-   pip install -r requirements.txt
-   streamlit run streamlit_app.py --server.port=10000
-   ```
-5. Click **Deploy** and get your live URL! 🎉
-
----
-
 ## **📜 License**
 This project is open-source and available under the **MIT License**.
